@@ -57,3 +57,39 @@ while line:
         resultingDataFile.write("\n")
     line = projectTwitterDataFile.readline()
     count += 1
+
+    
+    
+    
+    
+OUTPUT: 
+    
+Data file: resulting_data.csv
+Number of Retweets, Number of Replies, Positive Score, Negative Score, Net Score
+3,0,0,0,0
+1,0,2,2,0
+1,2,0,0,0
+3,1,1,0,1
+6,0,2,0,2
+9,5,2,0,2
+19,0,2,0,2
+0,0,0,3,-3
+0,0,0,2,-2
+82,2,2,0,2
+0,0,0,1,-1
+0,0,1,0,1
+47,0,2,0,2
+2,1,1,0,1
+0,2,1,0,1
+0,0,2,1,1
+4,6,3,0,3
+19,0,2,1,1
+0,0,1,0,1
+
+Result	Actual Value	Expected Value	Notes
+Pass	'Numbe...core\n'	'Numbe...core\n'	checking that the headers are set correctly.
+Pass	'19'	'19'	checking that the value for a particular cell matches.
+Pass	'-3'	'-3'	checking that the value of the net score is correct for a particular cell.
+Pass	20	20	checking that the file has the correct number of rows.
+Pass	5	5	checking that the file has the correct number of columns.
+You passed: 100.0% of the tests 
