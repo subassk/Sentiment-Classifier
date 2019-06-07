@@ -56,9 +56,4 @@ while line:
         resultingDataFile.write("Number of Retweets, Number of Replies, Positive Score, Negative Score, Net Score")
         resultingDataFile.write("\n")
     line = projectTwitterDataFile.readline()
-    count += 1
-
-    
-    
-    
-    
+    count += 1 
