@@ -6,13 +6,11 @@ with open("positive_words.txt") as pos_f:
         if lin[0] != ';' and lin[0] != '\n':
             positive_words.append(lin.strip())
 
-
 negative_words = []
 with open("negative_words.txt") as pos_f:
     for lin in pos_f:
         if lin[0] != ';' and lin[0] != '\n':
             negative_words.append(lin.strip())
-
 
 def strip_punctuation(strWord):
     for charPunc in punctuation_chars:
