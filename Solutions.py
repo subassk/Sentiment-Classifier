@@ -5,8 +5,6 @@ Your task is to build a sentiment classifier, which will detect how positive or 
 
 To start, define a function called strip_punctuation which takes one parameter, a string which represents a word, and removes characters considered punctuation from everywhere in the word. (Hint: remember the .replace() method for strings.)
 
-
-
 punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
 def strip_punctuation(strWord):
     for charPunc in punctuation_chars:
@@ -19,8 +17,6 @@ Pass	'wow'	'wow'	Testing that the correct output is returned when wow! is provid
 Pass	'incredible'	'incredible'	Testing that the correct output is returned when #in.cred..ible! is provided as input.
 Pass	'wonderful'	'wonderful'	Testing that the correct output is returned when wonderful is provided as input.
 You passed: 100.0% of the tests
-
-
 
 STEP 2:
 
@@ -57,8 +53,6 @@ def get_sentiment(strSentences, sentimentWords):
 def get_pos(strSentences):
     return get_sentiment(strSentences, positive_words)
 
-
-
 SOLUTION 2:
 punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
 
@@ -86,7 +80,6 @@ def get_pos(strSentences):
             if word == positiveWord:
                 count += 1
     return count
-    
     
 OUTPUT:
 what a truly wonderful day it is today incredible
